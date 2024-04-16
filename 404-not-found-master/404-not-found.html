@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 Not Found!</title>
     <style>
+         .container {
+            display: flex; /* Use flexbox for layout */
+            
+            flex-direction: row; /* Arrange items in a column */
+           
+        }
+        .text{
+            margin: auto;
+        }
+
         img{
             width:50%;
         }
@@ -13,9 +23,13 @@
             flex-direction: row;
             margin: 0px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         font-size: 3rem;
         }
         p{
+            margin-top: 20%;
+            margin-bottom: 15%;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
         }
         button{
             background-color: rgb(48, 46, 46);
@@ -30,12 +44,31 @@
             cursor: pointer; 
            
         }
+        @media screen and (max-width: 576px) {
+
+              .container {
+            display: flex; /* Use flexbox for layout */
+            
+            flex-direction: column; /* Arrange items in a column */
+           
+        }
+        h1{
+            margin-top: 20%;
+        }
+        }
     </style>
 </head>
 <body>
+    <div class="container">
     <img src="Scarecrow.png">
-    <h1>I have a bad news for you</h1>
-    <p>The page you are looking for might be removed or is temporarily unavailable</p>
+ <div class="text">
+    <h1><b>I have a bad news
+        <br> for you</h1></b>
+    <p>The page you are looking for 
+        <br>might be removed or 
+       <br> is temporarily unavailable</p>
     <button><b>BACK TO HOMEPAGE</b></button>
+</div>
+</div>
 </body>
 </html>
